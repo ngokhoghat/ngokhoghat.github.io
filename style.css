@@ -1,22 +1,326 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*,
+*:before,
+*:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-section {
-    height: 100vh;
-    background: rgb(199, 199, 199);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-
-svg {
-    cursor: pointer;
-}
-
-body {
+html {
     font-family: sans-serif;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {}
+
+.app-container {
+    width: 800px;
+    padding: 30px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background: #E5E5E5;
+}
+
+.introduce {
+    display: flex;
+    width: 100%;
+}
+
+.introduce .introduce__image {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.introduce .introduce__image img {
+    width: 100%;
+}
+
+.introduce .introduce__content {
+    width: 100%;
+    text-align: center;
+}
+
+.introduce .introduce__content .introduce__content__title {
+    font-size: 35px;
+    color: #00356A;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.introduce .introduce__content .introduce__content__title span {
+    font-size: 60px;
+    color: #AEBEC9;
+    position: relative;
+    top: 10px;
+}
+
+.introduce .introduce__content .introduce__content__about {
+    margin-left: 100px;
+    margin-right: 30px;
+    padding: 10px 0;
+    border-bottom: 1px solid #143050;
+}
+
+.introduce .introduce__content .introduce__content__about .title {
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    color: #143050;
+    position: relative;
+}
+
+.introduce .introduce__content .introduce__content__about .title h5 {
+    position: relative;
+    font-size: 35px;
+    z-index: 2;
+}
+
+.introduce .introduce__content .introduce__content__about .title::after {
+    content: "";
+    width: 60%;
+    height: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 20%;
+    border-radius: 10px;
+    z-index: 0;
+    background: #F3B710;
+}
+
+.introduce .introduce__content .introduce__content__about .text {
+    text-align: justify;
+}
+
+.education {
+    margin: 20px 50px;
+    border-bottom: 2px solid #143050;
+}
+
+.education .education__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.education .education__content .education__content__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    margin: 10px 10px;
+}
+
+.education .education__content .education__content__block .image-container {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education .education__content .education__content__block .image {
+    width: 100%;
+}
+
+.education .education__content .education__content__block .text {
+    max-width: 160px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.software {}
+
+.software .software__title {
+    position: relative;
+}
+
+.software .software__title p {
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    left: 6px;
+    font-size: 25px;
+    color: #143050;
+    z-index: 1;
+}
+
+.software .software__title::after {
+    content: "";
+    height: 7px;
+    width: 120px;
+    bottom: 3px;
+    z-index: 0;
+    border-radius: 10px;
+    background: #F3B710;
+    position: absolute;
+}
+
+.software .software__content {
+    margin: 20px 50px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 2px solid #143050;
+}
+
+.software .software__content .software__content__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 10px 0;
+}
+
+.software .software__content .software__content__block .logo-container {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.software .software__content .software__content__block .logo-container img {
+    width: 100%;
+}
+
+.software .software__content .software__content__block .text {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.experience {
+    width: 100%;
+}
+
+.experience .experience__title {
+    position: relative;
+}
+
+.experience .experience__title p {
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    left: 6px;
+    font-size: 25px;
+    color: #143050;
+    z-index: 1;
+}
+
+.experience .experience__title::after {
+    content: "";
+    height: 7px;
+    width: 143px;
+    bottom: 3px;
+    z-index: 0;
+    border-radius: 10px;
+    background: #F3B710;
+    position: absolute;
+}
+
+.experience .experience__content {
+    margin: 20px 50px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 2px solid #143050;
+}
+
+.experience .experience__content .experience__content__block {
+    width: 100%;
+    display: flex;
+}
+
+.experience .experience__content .experience__content__block .year {
+    text-align: center;
+    width: 20%;
+    border-right: 2px solid #cccccc;
+}
+
+.experience .experience__content .experience__content__block .text {
+    text-align: left;
+    width: 80%;
+    padding-left: 50px;
+}
+
+.experience .experience__content .experience__content__block:not(:last-child) .text {
+    margin-bottom: 30px;
+}
+
+.experience .experience__content .experience__content__block .text .text-title {
+    color: #04a0c9;
+    position: relative;
+}
+
+.experience .experience__content .experience__content__block .text .text-title::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background: gray;
+    border-radius: 4px;
+    left: -15px;
+    top: 5px;
+}
+
+.experience .experience__content .experience__content__block .text p {
+    margin-top: 10px;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact .contact__title {
+    position: relative;
+}
+
+.contact .contact__title p {
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    left: 6px;
+    font-size: 25px;
+    color: #143050;
+    z-index: 1;
+}
+
+.contact .contact__title::after {
+    content: "";
+    height: 7px;
+    width: 122px;
+    bottom: 3px;
+    z-index: 0;
+    border-radius: 10px;
+    background: #F3B710;
+    position: absolute;
+}
+
+.contact .contact__content {
+    margin: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .contact__content .contact__content__block {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.contact .contact__content .contact__content__block i {
+    font-size: 30px;
+    margin-right: 10px;
 }

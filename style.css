@@ -20,7 +20,11 @@ html {
     overflow-x: hidden;
 }
 
-body {}
+body {
+    background-image: url('./images/Bacground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .app-container {
     width: 800px;
@@ -317,7 +321,6 @@ body {}
     padding: 10px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .contact .contact__content .contact__content__block i {
